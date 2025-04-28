@@ -1,35 +1,38 @@
 # 🙏 Luna Bíblia Chatbot
 
-Um chatbot de Inteligência Artificial inspirado na Bíblia, criado para compartilhar mensagens de fé, responder dúvidas bíblicas e oferecer palavras de conforto e sabedoria cristã.
+Um chatbot de Inteligência Artificial criado para responder dúvidas bíblicas, compartilhar ensinamentos cristãos, devocionais diários e histórias da Bíblia de forma acolhedora e inspiradora.
 
-O projeto utiliza a **API da Groq** com o modelo **LLaMA 3 70B** para entregar respostas rápidas, contextuais e inspiradoras.
+Utiliza a **Groq API** com o modelo **LLaMA 3 70B**, oferecendo respostas rápidas e personalizadas.
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
 - Python 3.8+
-- Jupyter Notebook
 - Groq API
-- Modelo: `llama3-70b-8192` (Meta LLaMA 3 - 70B)
+- Jupyter Notebook
+- (Opcional) Streamlit para interface web
 
 ---
 
 ## ✨ Funcionalidades
 
-- Responde perguntas sobre a Bíblia (Antigo e Novo Testamento)
-- Cita versículos e ensina princípios cristãos
-- Oferece mensagens de fé, esperança e encorajamento
-- Mantém um estilo acolhedor, respeitoso e sábio
-- Gratuito para uso pessoal através da Groq API
+- Responde perguntas gerais sobre a Bíblia.
+- Compartilha devocionais diários.
+- Conta histórias bíblicas inspiradoras.
+- Explica ensinamentos de Jesus.
+- Indica versículos relevantes e comentados.
+- Ensina princípios cristãos de forma clara e amorosa.
 
 ---
 
-## 📦 Como Rodar o Projeto
+## 📦 Como Rodar o Projeto Localmente
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seuusuario/luna-biblia-chatbot.git
+### 1. Clone este repositório:
+
+```bash
+git clone https://github.com/seuusuario/luna-biblia-chatbot.git
+
 
 2. Acesse a pasta do projeto:
 
@@ -37,17 +40,32 @@ O projeto utiliza a **API da Groq** com o modelo **LLaMA 3 70B** para entregar r
 
 3. Instale as dependências:
 
-   pip install groq
+   pip install -r requirements.txt
 
-4. Configure sua API Key da Groq: No arquivo de código, insira sua chave aqui:
+4. Configure sua API Key da Groq:
 
-   client = Groq(api_key="SUA_API_KEY_AQUI")
+- Copie o arquivo config_template.py e renomeie para config.py.
+- Insira a sua chave da Groq dentro do novo arquivo config.py:
+
+API_KEY = "SUA_CHAVE_GROQ_AQUI"
 
 5. Execute o Jupyter Notebook:
 
    jupyter notebook
 
 **Abra o arquivo *Luna_Biblia_Chatbot.ipynb*, execute as células e converse com a Luna!**
+
+## 🌐 Versão Web (Opcional)
+
+Se desejar criar uma versão Web com Streamlit:
+
+- Instale também o Streamlit:
+
+pip install streamlit
+
+- Execute o app:
+
+streamlit run app.py
 
 ## 📚 Exemplo de Interação
 
