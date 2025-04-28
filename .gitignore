@@ -1,0 +1,8 @@
+ECHO est� ativado.
+# Arquivos de ambiente e configurações locais
+config.py
+.env
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
